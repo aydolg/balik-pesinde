@@ -1,1 +1,51 @@
-# balik-pesinde
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Balık Peşinde</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>
+    body { background: linear-gradient(to bottom right, #0A1628, #0F2238); min-height: 100vh; font-family: 'Poppins', sans-serif; }
+    .fish-float { animation: float 6s ease-in-out infinite; }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-25px); } }
+  </style>
+</head>
+<body class="text-white">
+  <div class="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+    <h1 class="text-6xl md:text-8xl font-black bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">
+      Balık Peşinde
+    </h1>
+    <p class="text-xl md:text-2xl text-cyan-200 mb-12">Olta balıkçısının en iyi dostu</p>
+    
+    <div class="fish-float text-cyan-400 mb-16">
+      <i data-lucide="fish" class="w-36 h-36"></i>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl w-full">
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-10 hover:bg-white/10 transition">
+        <i data-lucide="map-pin" class="w-16 h-16 text-emerald-400 mb-4"></i>
+        <h3 class="text-2xl font-bold mb-2">En İyi Meralar</h3>
+        <p class="text-cyan-200">Türkiye’nin saklı avlakları</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-10 hover:bg-white/10 transition">
+        <i data-lucide="fish" class="w-16 h-16 text-blue-400 mb-4"></i>
+        <h3 class="text-2xl font-bold mb-2">Balık Rehberi</h3>
+        <p class="text-cyan-200">30+ tür, yem & ekipman önerileri</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-10 hover:bg-white/10 transition">
+        <i data-lucide="sun" class="w-16 h-16 text-purple-400 mb-4"></i>
+        <h3 class="text-2xl font-bold mb-2">Hava & Ay Evresi</h3>
+        <p class="text-cyan-200">Bugün ne tutarsın?</p>
+      </div>
+    </div>
+
+    <p class="mt-20 text-cyan-400 text-lg">© 2025 Balık Peşinde – Yakında tam sürüm geliyor</p>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
